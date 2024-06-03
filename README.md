@@ -4,6 +4,21 @@
 - Feature, login, register, edit, delete, responsive design for mobile
 - In this project redux is combine with locale storage to save state if page is refresh.
 
+# Deploy
+
+- Link : `https://toko-klontong-d0e07.web.app/`
+
+```json
+{
+    email: "user1@mail.com",
+    password: "1234"
+},
+{
+    email: "user2@mail.com",
+    password: "1234"
+}
+```
+
 # Running app
 
 - clon this repo `git clone https://github.com/riefqialviansyah/frontend-tk.git`
