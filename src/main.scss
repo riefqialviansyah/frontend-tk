@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@mixin mini {
+  @media (max-width: 390px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: 391px) and (max-width: 430px) {
+    @content;
+  }
+}
+
+@mixin tabet {
+  @media (min-width: 431px) and (max-width: 1022px) {
+    @content;
+  }
+}

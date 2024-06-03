@@ -1,0 +1,59 @@
+.add-page {
+  padding: 10px;
+  min-height: fit-content;
+
+  h1 {
+    font-size: 24px;
+    opacity: 0.7;
+  }
+
+  form {
+    table {
+      tr {
+        td {
+          padding: 5px 0;
+          font-size: 18px;
+        }
+
+        input {
+          height: 25px;
+          width: 200px;
+          border-radius: 5px;
+          padding: 5px;
+        }
+
+        textarea {
+          width: 200px;
+          height: 100px;
+          border-radius: 5px;
+          margin-left: 5px;
+          padding: 5px;
+        }
+
+        .description {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .btn-save {
+          text-align: center;
+
+          button {
+            padding: 0 10px;
+            font-size: 18px;
+            border-radius: 5px;
+            background-color: #ccc;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+              scale: 1.1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

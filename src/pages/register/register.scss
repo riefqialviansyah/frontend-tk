@@ -1,0 +1,73 @@
+@import "../../main.scss";
+
+.register {
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .box-register {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(109, 99, 99);
+    min-width: 400px;
+    min-height: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px gray;
+
+    @include mini {
+      min-width: 350px;
+    }
+
+    h3 {
+      margin-top: 15px;
+      margin-left: 20px;
+      font-size: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+
+      input {
+        height: 40px;
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      button {
+        height: 40px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          scale: 1.05;
+          background-color: #ccc;
+        }
+      }
+    }
+    .info-register {
+      margin-left: 20px;
+
+      p {
+        .to-register {
+          font-weight: bold;
+          font-style: italic;
+          color: black;
+          display: inline-block;
+          transition: 0.3s;
+
+          &:hover {
+            scale: 1.1;
+            transform: translateY(-3px);
+          }
+        }
+      }
+    }
+  }
+}

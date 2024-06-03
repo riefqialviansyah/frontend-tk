@@ -1,0 +1,48 @@
+@import "../../main.scss";
+
+.bottombar-component {
+  display: none;
+
+  @include mini {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    font-size: 30px;
+    border-top: 1px solid black;
+    box-shadow: 0px -1px 0px -1px black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+  }
+
+  @include mobile {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    font-size: 30px;
+    border-top: 1px solid black;
+    box-shadow: 0px -1px 0px -1px black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+  }
+
+  .bottombar-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-size: 16px;
+    }
+  }
+}

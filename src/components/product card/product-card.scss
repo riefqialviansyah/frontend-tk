@@ -1,0 +1,96 @@
+@import "../../main.scss";
+
+.box {
+  width: 165px;
+  height: 200px;
+  box-shadow: 2px 2px 5px rgba(19, 18, 18, 0.2);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid #f0f0f0;
+
+  @include mini {
+    width: 150px;
+  }
+
+  .img {
+    width: 100%;
+    height: 100px;
+    padding: 2px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .cover {
+      background-color: gray;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      border-radius: 10px;
+      opacity: 0;
+      transition: 0.5s;
+
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .data-item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+
+    h4 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 158px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .category-name {
+      color: #333;
+      opacity: 0.5;
+    }
+
+    .price {
+      font-size: 16px;
+    }
+  }
+
+  .data-action {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+
+    .action {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      background-color: #f0f0f0;
+      padding: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #e0e0e0;
+      }
+
+      &.active {
+        background-color: #ccc;
+      }
+    }
+  }
+}
